@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Home page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Home Page Start-->
+  <main id="home" class="container">
+    <h1 id="title">QUIZ YOURSELF</h1>
+    <a id="play" class="button" href="">Play</a>
+    <a id="highScores-btn" class="button" href="">High Scores</a>
+  </main>
+  <!-- Home Page End-->
+
+  <!-- Game Page Start-->
+  <section id="game-page" class="container-game-page">
+    <div id="hud">
+      <div id="hud-item-1">
+        <p class="hud-prefix">Question</p>
+        <h2 class="hud-main-text" id="questionCounterText">1/3</h2>
+      </div>
+      <div id="hud-item-2">
+        <p class="hud-prefix">Score</p>
+        <h2 class="hud-main-text" id="scoreText">0</h2>
+      </div>
+    </div>
+    <h2 id="question">Answer the Question</h2>
+    <div class="choice-container">
+      <p class="choice-prefix">A</p>
+      <p class="choice-text" data-number="1">Choice 1</p>
+    </div>
+    <div class="choice-container">
+      <p class="choice-prefix">B</p>
+      <p class="choice-text" data-number="2">Choice 2</p>
+    </div>
+    <div class="choice-container">
+      <p class="choice-prefix">C</p>
+      <p class="choice-text" data-number="3">Choice 3</p>
+    </div>
+    <div class="choice-container">
+      <p class="choice-prefix">D</p>
+      <p class="choice-text" data-number="4">Choice 4</p>
+    </div>
+  </section>
+  <!-- Game Page End -->
+
+  <!-- high score page start-->
+  <section id="highScores-page" class="container-highScores-page">
+    <h1 id="finalScore">High Scores</h1>
+    <ul id="highScoresList"></ul>
+    <a id="goHome-btn" class="button" href="">Go Home</a>
+  </section>
+
+  <!-- high score page end-->
+
+  <!-- End Page Start-->
+  <section id="end-page" class="container-end-page">
+    <h1 id="finalScore">0</h1>
+    <form id="form">
+      <input type="text" name="username" id="username" placeholder="username">
+      <button type="submit" class="button" id="saveScoreButton">Save</button>
+    </form>
+    <a id="playAgain" class="button" href="">Play Again</a>
+    <a id="goHome" class="button" href="">Go Home</a>
+  </section>
+  <!-- End Page End-->
+
+</body>
+
+</html>
